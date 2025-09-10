@@ -8,11 +8,9 @@
 
 Marine plastic pollution has become a pervasive global issue, threatening ecosystems, biodiversity, and human well-being. Effective monitoring is critical, yet current approaches remain fragmented. Reviews of citizen science initiatives reveal key gaps: limited coverage in developing regions, inconsistent methodologies, vague reporting on participants, and a lack of harmonized litter classification standards, all of which reduce comparability and hinder large-scale analysis (Hidalgo-Ruz et al., 2025).
 
-Professionals working with citizen science projects also highlight both benefits and persistent challenges: public learning, reduced data collection costs, and tangible environmental improvements on the one hand, but difficulties in sustaining volunteer engagement, ensuring credibility, and bridging citizen–science divides on the other (Peacock et al., 2025). These shortcomings point to the need for next-generation citizen science systems that are more scalable, credible, and cost-efficient.
+Professionals working with citizen science projects also highlight both benefits and persistent challenges: public learning, reduced data collection costs, and tangible environmental improvements on the one hand, but difficulties in sustaining volunteer engagement, ensuring credibility, and bridging citizen–science divides on the other (Peacock et al., 2025). These shortcomings point to the need for next-generation systems that are more scalable, cost-efficient, and engaging.
 
-Our proposed system, APT, aims to address these shortcomings by combining AI-powered litter detection with mechanisms that promote participation and learning. Unlike existing platforms such as PlastOPol, which rely heavily on repeated retraining of object detection models, APT leverages large language models (LLMs) to achieve higher recognition accuracy with lower retraining costs, thereby reducing technical overhead and overall system cost.
-
-APT is designed not only to collect and classify litter data but also to keep participants engaged over time. The system considers approaches such as structured tasks or mission-like activities to sustain motivation, particularly for students, volunteers, and local communities. By integrating accurate detection, cost efficiency, and innovative engagement, APT is positioned as a competitive alternative to current marine litter monitoring platforms, offering a more effective and sustainable path toward tackling this pressing environmental challenge.
+Our proposed system, the AI-assisted Preservation Tracker (APT), seeks to address these challenges. Unlike existing platforms such as PlastOPol, which rely on repeated retraining of object detection models, APT leverages large language models (LLMs) to achieve higher recognition accuracy with lower retraining costs, simplifying the pipeline and reducing technical overhead. In addition to litter monitoring, APT also considers broader applications in biodiversity observation, eco-tourism, and environmental education—areas where public participation can play a decisive role in building stewardship.
 
 Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
 
@@ -31,8 +29,6 @@ Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
         2. 伺服器程式會將照片的URL、使用者對照片的描述、AI分析結果、AI建議處理的狀態、GPS座標、拍攝時間等資料存在資料庫上。
 3. 使用者透過Web介面可以看到目前各項工作的處理狀態。
 4. 管理人員透過後台管理程式可以更新各項工作的狀態。
-
-
 
 ## Technology Used
 
@@ -75,7 +71,6 @@ service cloud.firestore {
   }
 }
 ```
-
 
 ## References (APA Style)
 
