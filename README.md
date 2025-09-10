@@ -32,6 +32,10 @@ Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
 
 ## Technology Used
 
+**Colab**:
+
+* [Colab Main Program](https://colab.research.google.com/drive/1X-2Dr2H7feQ66fW7T07c6aqWUjrmAIno?usp=sharing)
+
 **LLM**
 
 * [Google Gemini API](https://aistudio.google.com/)
@@ -55,9 +59,9 @@ Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
 
 ## Demo Websites
 
-[工作項目列表](https://allergicalligator.github.io/ocean_challenge_2025)
+[Task List](https://allergicalligator.github.io/ocean_challenge_2025)
 
-[工作項目管理](https://allergicalligator.github.io/ocean_challenge_2025/update.html)
+[Task Control Panel](https://allergicalligator.github.io/ocean_challenge_2025/update.html)
 
 Note that, the firestore access has been set to readonly.
 
