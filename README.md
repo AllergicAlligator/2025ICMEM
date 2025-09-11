@@ -20,15 +20,15 @@ Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
 
 ## How it works?
 
-1. 使用者透過手機上傳照片，並寫下對該照片的描述。
-2. 伺服器接收到照片之後，會做如下處理：
-    1. 將照片送往LLM做分析，產生分析結果以及需處理的狀態。
-    2. 伺服器程式會讀出GPS座標以及拍攝時間。
-    3. 如果照片包含GPS訊息：
-        1. 伺服器程式會將照片送往圖形空間儲存，並取得照片的URL。
-        2. 伺服器程式會將照片的URL、使用者對照片的描述、AI分析結果、AI建議處理的狀態、GPS座標、拍攝時間等資料存在資料庫上。
-3. 使用者透過Web介面可以看到目前各項工作的處理狀態。
-4. 管理人員透過後台管理程式可以更新各項工作的狀態。
+1. Users upload photos via their mobile devices and provide a description of each photo.
+2. Once the server receives the photo, it performs the following steps:
+    1. The photo is sent to an LLM for analysis, which generates an interpretation and a suggested status for follow-up.
+    2. The server extracts the GPS coordinates and timestamp from the photo.
+    3. If the photo contains GPS metadata:
+        1. The server uploads the photo to a geospatial storage service and retrieves a URL for the image.
+        2. The server stores the photo’s URL, the user’s description, the AI analysis results, the AI-suggested status, the GPS coordinates, and the timestamp in the database.
+3. Users can view the current status of submitted reports through a web interface.
+4. Administrators can update the status of each report via a backend management interface.
 
 ## Technology Used
 
