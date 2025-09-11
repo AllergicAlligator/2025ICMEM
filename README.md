@@ -30,7 +30,7 @@ Our proposed system, the AI-assisted Preservation Tracker (APT), seeks to addres
 
 ## Technology Used
 
-**Colab**:
+**Colab**
 
 * [Our Main Program on Colab](https://colab.research.google.com/drive/1X-2Dr2H7feQ66fW7T07c6aqWUjrmAIno?usp=sharing)
 
