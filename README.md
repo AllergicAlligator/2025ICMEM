@@ -34,7 +34,7 @@ Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
 
 **Colab**:
 
-* [Colab Main Program](https://colab.research.google.com/drive/1X-2Dr2H7feQ66fW7T07c6aqWUjrmAIno?usp=sharing)
+* [Our Main Program on Colab](https://colab.research.google.com/drive/1X-2Dr2H7feQ66fW7T07c6aqWUjrmAIno?usp=sharing)
 
 **LLM**
 
@@ -51,7 +51,7 @@ Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
 **Database**
 
 * [firebase](https://firebase.google.com/)
-* [supabase](https://supabase.com/)
+* [supabase](https://supabase.com/) (Trying this as open source firebase alternative)
 
 **WebGIS**
 
