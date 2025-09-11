@@ -12,8 +12,6 @@ Professionals working with citizen science projects also highlight both benefits
 
 Our proposed system, the AI-assisted Preservation Tracker (APT), seeks to address these challenges. Unlike existing platforms such as PlastOPol, which rely on repeated retraining of object detection models, APT leverages large language models (LLMs) to achieve higher recognition accuracy with lower retraining costs, simplifying the pipeline and reducing technical overhead. In addition to litter monitoring, APT also considers broader applications in biodiversity observation, eco-tourism, and environmental education—areas where public participation can play a decisive role in building stewardship.
 
-Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
-
 ## System Architecture
 
 <img src="img/apt.jpg">
