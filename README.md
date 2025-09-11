@@ -63,7 +63,7 @@ Slides： https://youtu.be/MTMq_1SaROM?si=EQl_TyusV4Ze4J36
 
 [Task Control Panel](https://allergicalligator.github.io/ocean_challenge_2025/update.html)
 
-Note that, the firestore access has been set to readonly.
+Note that, for security purposes, the firestore access would have been set to readonly.
 
 ```
 service cloud.firestore {
