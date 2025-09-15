@@ -382,7 +382,7 @@
           <img class="photo-image" src="${data.image_url}" alt="photo" onclick="showMap(${lat}, ${lon}, '${data.description || '(無描述文字)'}')">
           <div class="photo-info">
             <div class="photo-time">
-              <div>📸: ${gpsDateTime?.formatted || 'No Timestamp'}</div>
+              <div>🎦: ${gpsDateTime?.formatted || 'No Timestamp'}</div>
               <div>⬆️: ${formatServerTime(uploadTimestamp)}</div>
               ${updateTimestamp ? `<div>🔄: ${formatServerTime(updateTimestamp)}</div>` : ''}
             </div>
