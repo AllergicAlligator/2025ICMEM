@@ -313,9 +313,9 @@
 
           marker.bindPopup(`
             <img src="${item.image_url}" width="240"><br>
-            <b>Capture Time:</b> ${item.formattedDateTime}<br>
-            <b>Upload Time:</b> ${item.uploadDateTime}<br>
-            ${item.updateTime ? `<b>Update Time:</b> ${formatServerTime(item.updateTime)}<br>` : ''}
+            <b>📸:</b> ${item.formattedDateTime}<br>
+            <b>⬆️:</b> ${item.uploadDateTime}<br>
+            ${item.updateTime ? `<b>🔄:</b> ${formatServerTime(item.updateTime)}<br>` : ''}
             <b>Location:</b> ${lat.toFixed(6)}, ${lon.toFixed(6)}<br>
             <b>Status:</b> ${statusMap[item.status]?.icon || item.status}<br>
             <b>User Annotation:</b> ${item.description || "(No Data)"}
