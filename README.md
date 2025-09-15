@@ -12,6 +12,20 @@ Professionals working with citizen science projects also highlight both benefits
 
 Our proposed system, the AI-assisted Preservation Tracker (APT), seeks to address these challenges. Unlike existing platforms such as PlastOPol, which rely on repeated retraining of object detection models, APT leverages large language models (LLMs) to achieve higher recognition accuracy with lower retraining costs, simplifying the pipeline and reducing technical overhead. In addition to litter monitoring, APT also considers broader applications in biodiversity observation, eco-tourism, and environmental education—areas where public participation can play a decisive role in building stewardship.
 
+## PlastOPol v.s. APT
+
+| Aspect                           | PlastOPol                                                                                          | APT                                                                                         |
+| -------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Core Technology**              | EfficientDet-d0 object detection, requires retraining with annotations                             | Large Language Models (LLMs) for image + text analysis, minimal retraining needed           |
+| **Data Annotation**              | Users must manually correct false positives / add missing detections                               | LLM auto-generates descriptive text + suggested status, lowers user burden                  |
+| **Classification Scheme**        | Based on GICS (industry-based categories: fishing, construction, tourism) → complex for volunteers | Semantic, user-friendly categories (e.g., “plastic bottle”, “fishing net fragment”)         |
+| **Connectivity**                 | Works offline, uploads when reconnected                                                            | Near real-time (≈30s), integrated with cloud services                                       |
+| **User Experience**              | Focus on data entry and correction, limited motivation design                                      | Adds gamification & eco-tourism features → fosters engagement & awareness                   |
+| **Deployment Cost**              | Higher (due to model retraining + maintenance)                                                     | Lower (Colab + Firebase + imgBB, easy deployment)                                           |
+| **Scalability**                  | Promising but technically demanding, needs skilled operators                                       | Lightweight, easier to scale across schools, NGOs, communities                              |
+| **Educational / Awareness Role** | Mainly data collection & visualization                                                             | Explicitly designed to raise **public awareness** and encourage **long-term participation** |
+
+
 ## System Architecture
 
 <img src="img/apt.jpg">
