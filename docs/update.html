@@ -235,8 +235,8 @@
       <div>
         <span class="filter-label">Sort:</span>
         <select id="timeSort" class="filter-select">
-          <option value="newest">Lastest First</option>
-          <option value="oldest">Oldest First</option>
+          <option value="newest">Descending First</option>
+          <option value="oldest">Ascending</option>
         </select>
       </div>
     </div>
@@ -382,9 +382,9 @@
           <img class="photo-image" src="${data.image_url}" alt="photo" onclick="showMap(${lat}, ${lon}, '${data.description || '(無描述文字)'}')">
           <div class="photo-info">
             <div class="photo-time">
-              <div>Capture Time: ${gpsDateTime?.formatted || 'No Timestamp'}</div>
-              <div>Upload Time: ${formatServerTime(uploadTimestamp)}</div>
-              ${updateTimestamp ? `<div>Update Time: ${formatServerTime(updateTimestamp)}</div>` : ''}
+              <div>📸: ${gpsDateTime?.formatted || 'No Timestamp'}</div>
+              <div>☁️: ${formatServerTime(uploadTimestamp)}</div>
+              ${updateTimestamp ? `<div>🔄: ${formatServerTime(updateTimestamp)}</div>` : ''}
             </div>
             <div class="photo-description">${data.description || '(No Description)'}</div>
             ${data.ai_result ? `
