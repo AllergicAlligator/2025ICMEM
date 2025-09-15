@@ -301,7 +301,7 @@
       
       return {
         timestamp: new Date(year, month - 1, day, hours, minutes, seconds).getTime(),
-        formatted: `${year}/${month}/${day} ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} (UTC+8)`
+        formatted: `${year}/${month.toString().padStart(2, '0')}/${day.toString().padStart(2, '0')} ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} (UTC+8)`
       };
     }
 
