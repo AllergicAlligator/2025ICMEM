@@ -70,8 +70,8 @@ Our proposed system, the AI-assisted Preservation Tracker (APT), seeks to addres
 
 ## Demo Websites
 
-* [Task List](https://allergicalligator.github.io/ocean_challenge_2025)
-* [Task Control Panel](https://allergicalligator.github.io/ocean_challenge_2025/update.html)
+* [Task List](https://allergicalligator.github.io/2025ICMEM)
+* [Task Control Panel](https://allergicalligator.github.io/2025ICMEM/update.html)
 
 Note that, for security purposes, the firestore access would have been set to readonly.
 
