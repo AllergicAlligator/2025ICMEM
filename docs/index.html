@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>環境保育工作區圖</title>
+  <title>Task List</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     html, body {
@@ -161,14 +161,14 @@
     </div>
     <div class="filters">
       <select id="statusFilter">
-        <option value="all">全部事項</option>
-        <option value="todo">待辦事項</option>
-        <option value="doing">處理中事項</option>
-        <option value="done">已完成事項</option>
+        <option value="all">All</option>
+        <option value="todo">To Do</option>
+        <option value="doing">Doing</option>
+        <option value="done">Done</option>
       </select>
       <select id="sortOrder">
-        <option value="desc">新到舊</option>
-        <option value="asc">舊到新</option>
+        <option value="desc">Descending</option>
+        <option value="asc">Ascending</option>
       </select>
     </div>
     <div class="thumb-list" id="photo-list"></div>
@@ -238,7 +238,7 @@
       }
 
       function formatTaiwanTime(timestamp) {
-        if (!timestamp) return "無時間資料";
+        if (!timestamp) return "No Timestamp";
         const date = new Date(timestamp);
         // 調整為台灣時間 (UTC+8)
         date.setHours(date.getHours() + 8);
@@ -295,7 +295,7 @@
           div.innerHTML = `
             <img class="thumb-img" src="${item.image_url}" alt="thumb">
             <div class="desc-text" style="flex:1">
-              ${item.description || "<i>(無描述文字)</i>"}
+              ${item.description || "<i>(No Description)</i>"}
             </div>
           `;
           listDiv.appendChild(div);
@@ -313,16 +313,16 @@
 
           marker.bindPopup(`
             <img src="${item.image_url}" width="240"><br>
-            <b>拍攝時間:</b> ${item.formattedDateTime}<br>
-            <b>上傳時間:</b> ${item.uploadDateTime}<br>
-            ${item.updateTime ? `<b>最後更新:</b> ${formatServerTime(item.updateTime)}<br>` : ''}
-            <b>地點:</b> ${lat.toFixed(6)}, ${lon.toFixed(6)}<br>
-            <b>狀態:</b> ${statusMap[item.status]?.icon || item.status}<br>
-            <b>描述:</b> ${item.description || "(無描述文字)"}
+            <b>Capture Time:</b> ${item.formattedDateTime}<br>
+            <b>Upload Time:</b> ${item.uploadDateTime}<br>
+            ${item.updateTime ? `<b>Update Time:</b> ${formatServerTime(item.updateTime)}<br>` : ''}
+            <b>Location:</b> ${lat.toFixed(6)}, ${lon.toFixed(6)}<br>
+            <b>Status:</b> ${statusMap[item.status]?.icon || item.status}<br>
+            <b>User Annotation:</b> ${item.description || "(No Data)"}
             ${item.ai_result ? `
               <br><br>
               <div style="background: #f8f9fa; padding: 8px; border-radius: 4px; border-left: 4px solid #4CAF50; margin-top: 10px;">
-                <div style="font-weight: bold; color: #2c3e50; margin-bottom: 5px;">AI 分析結果</div>
+                <div style="font-weight: bold; color: #2c3e50; margin-bottom: 5px;">AI Result</div>
                 <div style="color: #666; font-size: 0.9em; white-space: pre-wrap;">${item.ai_result}</div>
               </div>
             ` : ''}
@@ -342,7 +342,7 @@
     };
 
     function formatServerTime(timestamp) {
-      if (!timestamp) return "無時間資料";
+      if (!timestamp) return "No Timestamp";
       const date = new Date(timestamp);
       
       const year = date.getFullYear();
@@ -351,7 +351,7 @@
       const hours = date.getHours().toString().padStart(2, '0');
       const minutes = date.getMinutes().toString().padStart(2, '0');
       const seconds = date.getSeconds().toString().padStart(2, '0');
-      return `${year}/${month}/${day} ${hours}:${minutes}:${seconds} (伺服器時間)`;
+      return `${year}/${month}/${day} ${hours}:${minutes}:${seconds} (Server Time)`;
     }
 
     window.showMap = function(lat, lon, description, updateTime, aiResult) {
@@ -374,10 +374,10 @@
       let popupContent = `
         <div style="max-width: 300px;">
           <div style="margin-bottom: 10px;">${description}</div>
-          ${updateTime ? `<div style="color: #666; font-size: 0.9em; margin-bottom: 10px;">最後更新: ${formatServerTime(updateTime)}</div>` : ''}
+          ${updateTime ? `<div style="color: #666; font-size: 0.9em; margin-bottom: 10px;">Last Update: ${formatServerTime(updateTime)}</div>` : ''}
           ${aiResult ? `
             <div style="background: #f8f9fa; padding: 8px; border-radius: 4px; border-left: 4px solid #4CAF50; margin-top: 10px;">
-              <div style="font-weight: bold; color: #2c3e50; margin-bottom: 5px;">AI 分析結果</div>
+              <div style="font-weight: bold; color: #2c3e50; margin-bottom: 5px;">AI Result</div>
               <div style="color: #666; font-size: 0.9em; white-space: pre-wrap;">${aiResult}</div>
             </div>
           ` : ''}
