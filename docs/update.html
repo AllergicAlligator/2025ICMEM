@@ -283,9 +283,15 @@
     let map = null;
     let currentMarker = null;
 
-    function dmsToDecimal(dmsArray) {
+    function dmsToDecimal(dmsArray, ref) {
       const [d, m, s] = dmsArray.map(Number);
-      return d + m / 60 + s / 3600;
+      let decimal = d + m / 60 + s / 3600;
+    
+      // 如果是南緯或西經 → 負數
+      if (ref === "S" || ref === "W") {
+        decimal = -decimal;
+      }
+      return decimal;
     }
 
     function parseGPSDateTime(gpsData) {
