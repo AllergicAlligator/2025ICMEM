@@ -4,6 +4,8 @@
 
 **Authors**: Tiffany Gau, Megan Chang, Oliver Chen, Daniel Gau
 
+**Slides**: [https://docs.google.com/presentation/d/1qqQy_ypb9atXituDcXuRff1a1yi9HLa2B8YJbNH4dug/edit?usp=sharing](https://docs.google.com/presentation/d/1qqQy_ypb9atXituDcXuRff1a1yi9HLa2B8YJbNH4dug/edit?usp=sharing)
+
 ## Introduction
 
 Marine plastic pollution has become a pervasive global issue, threatening ecosystems, biodiversity, and human well-being. Effective monitoring is critical, yet current approaches remain fragmented. Reviews of citizen science initiatives reveal key gaps: limited coverage in developing regions, inconsistent methodologies, vague reporting on participants, and a lack of harmonized litter classification standards, all of which reduce comparability and hinder large-scale analysis (Hidalgo-Ruz et al., 2025).
