@@ -12,6 +12,15 @@ Professionals working with citizen science projects also highlight both benefits
 
 Our proposed system, the AI-assisted Preservation Tracker (APT), seeks to address these challenges. Unlike existing platforms such as PlastOPol, which rely on repeated retraining of object detection models, APT leverages large language models (LLMs) to achieve higher recognition accuracy with lower retraining costs, simplifying the pipeline and reducing technical overhead. In addition to litter monitoring, APT also considers broader applications in biodiversity observation, eco-tourism, and environmental education—areas where public participation can play a decisive role in building stewardship.
 
+## Challenges
+
+|Categories|Description|
+|:--|:--|
+|Challenges related to involving citizens in science (n=40)|initial engagement 27<br/>need for training 8<br/>maintaining engagement 5|
+|Challenges related to science (n=43)|ensuring scientific rigour 23<br/>collaboration with and between teams 12<br/>finding the right research questions 8|
+|Challenges related to bridging the gap between citizens and science (n=46)|pragmatic and safety concerns 23<br/>obtaining funding and resources 12<br/>need for deeper citizen involvement 6<br/>balancing the needs/wants of citizens and scientists 6|
+
+
 ## PlastOPol v.s. APT
 
 | Aspect                           | PlastOPol                                                                                          | APT                                                                                         |
