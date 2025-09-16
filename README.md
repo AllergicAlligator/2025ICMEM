@@ -20,6 +20,8 @@ Our proposed system, the AI-assisted Preservation Tracker (APT), seeks to addres
 |Challenges related to science (n=43)|ensuring scientific rigour 23<br/>collaboration with and between teams 12<br/>finding the right research questions 8|
 |Challenges related to bridging the gap between citizens and science (n=46)|pragmatic and safety concerns 23<br/>obtaining funding and resources 12<br/>need for deeper citizen involvement 6<br/>balancing the needs/wants of citizens and scientists 6|
 
+[main challenges of citizen science relating to marine litter](https://ars.els-cdn.com/content/image/1-s2.0-S0025326X25003893-mmc3.pdf)
+
 
 ## PlastOPol v.s. APT
 
