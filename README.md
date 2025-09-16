@@ -4,7 +4,7 @@
 
 **Authors**: Tiffany Gau, Megan Chang, Oliver Chen, Daniel Gau
 
-**Slides**: [https://docs.google.com/presentation/d/1qqQy_ypb9atXituDcXuRff1a1yi9HLa2B8YJbNH4dug/edit?usp=sharing](https://docs.google.com/presentation/d/1qqQy_ypb9atXituDcXuRff1a1yi9HLa2B8YJbNH4dug/edit?usp=sharing)
+**Slides**: [Click for Slides](https://docs.google.com/presentation/d/1qqQy_ypb9atXituDcXuRff1a1yi9HLa2B8YJbNH4dug/edit?usp=sharing)
 
 ## Introduction
 
