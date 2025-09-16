@@ -381,8 +381,8 @@
         const photoCard = document.createElement('div');
         photoCard.className = 'photo-card';
         
-        const lat = dmsToDecimal(data.exif.GPSLatitude);
-        const lon = dmsToDecimal(data.exif.GPSLongitude);
+        const lat = dmsToDecimal(data.exif.GPSLatitude, data.exif.GPSLatitudeRef);
+        const lon = dmsToDecimal(data.exif.GPSLongitude, data.exif.GPSLongitudeRef);
         
         photoCard.innerHTML = `
           <img class="photo-image" src="${data.image_url}" alt="photo" onclick="showMap(${lat}, ${lon}, '${data.description || '(無描述文字)'}')">
