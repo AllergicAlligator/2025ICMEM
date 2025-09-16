@@ -286,8 +286,8 @@
         filtered.forEach(item => {
           const gps = item.exif;
           if (!gps?.GPSLatitude || !gps?.GPSLongitude) return;
-          const lat = dmsToDecimal(gps.GPSLatitude);
-          const lon = dmsToDecimal(gps.GPSLongitude);
+          const lat = dmsToDecimal(gps.GPSLatitude, gps.GPSLatitudeRef);
+          const lon = dmsToDecimal(gps.GPSLongitude, gps.GPSLongitudeRef);
 
           const div = document.createElement("div");
           div.className = `thumb-button ${item.status}`;
